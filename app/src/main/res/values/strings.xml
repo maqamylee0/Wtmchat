@@ -6,9 +6,12 @@
     <string name="linked_devices">Linked Devices</string>
     <string name="starred_messages">Starred Messages</string>
     <string name="settings">Settings</string>
-<!--    <string name="app_name">Wtmchat</string>-->
-<!--    <string name="app_name">Wtmchat</string>-->
-<!--    <string name="app_name">Wtmchat</string>-->
-<!--    <string name="app_name">Wtmchat</string>-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">profile</string>
+    <string name="textview">TextView</string>
+    <!--    <string name="app_name">Wtmchat</string>-->
+    <!--    <string name="app_name">Wtmchat</string>-->
+    <!--    <string name="app_name">Wtmchat</string>-->
+    <!--    <string name="app_name">Wtmchat</string>-->
 
 </resources>
