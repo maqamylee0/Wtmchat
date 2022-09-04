@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.new_broadcast ->{
-                Toast.makeText(this, "New Broadcast click", Toast.LENGTH_LONG).show()
+                goToNewBroadcastActivity()
                 return true
             }
             R.id.linked_devices -> {

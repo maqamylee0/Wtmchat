@@ -25,11 +25,13 @@
         </activity>
         <activity
             android:name=".NewBroadcastActivity"
+            android:label="New Broadcast"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".NewGroupActivity"
             android:exported="false"
+            android:label="New Group"
             android:parentActivityName=".MainActivity" />
     </application>
 
