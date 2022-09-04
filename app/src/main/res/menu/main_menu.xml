@@ -4,22 +4,22 @@
 
     <item
         android:id="@+id/search"
-        android:title="Search"
+        android:title="@string/search"
         app:showAsAction="always"
         android:icon="@drawable/ic_baseline_search_24"/>
     <item
         android:id="@+id/new_group"
-        android:title="New group" />
+        android:title="@string/new_group" />
     <item
         android:id="@+id/new_broadcast"
-        android:title="New broadcast" />
+        android:title="@string/new_broadcast" />
     <item
         android:id="@+id/linked_devices"
-        android:title="Linked devices" />
+        android:title="@string/linked_devices" />
     <item
         android:id="@+id/starred_messages"
-        android:title="Starred messages" />
+        android:title="@string/starred_messages" />
     <item
         android:id="@+id/settings"
-        android:title="Settings" />
+        android:title="@string/settings" />
 </menu>

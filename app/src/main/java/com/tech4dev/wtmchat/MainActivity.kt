@@ -14,46 +14,44 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main_menu,menu)
+        menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.search ->{
-                Toast.makeText(this,"Search Clicked",Toast.LENGTH_LONG).show()
+            R.id.search -> {
+                Toast.makeText(this, "Search click", Toast.LENGTH_LONG).show()
                 return true
             }
             R.id.new_group ->{
-                Toast.makeText(this,"New Group clicked",Toast.LENGTH_LONG).show()
-                goToNewGroup()
+                goToNewGroupActivity()
                 return true
             }
             R.id.new_broadcast ->{
-                Toast.makeText(this,"New Broadcast clicked",Toast.LENGTH_LONG).show()
+                goToNewGroupBroadcast()
                 return true
             }
-            R.id.linked_devices ->{
-                Toast.makeText(this,"Linked devices clicked",Toast.LENGTH_LONG).show()
-                return true
-            }
-            R.id.starred_messages ->{
-                Toast.makeText(this,"Starred messages Clicked",Toast.LENGTH_LONG).show()
+            R.id.linked_devices -> {
+                Toast.makeText(this, "Linked Devices click", Toast.LENGTH_LONG).show()
                 return true
             }
             R.id.settings ->{
-                Toast.makeText(this,"Settings Clicked",Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Settings click", Toast.LENGTH_LONG).show()
                 return true
             }
-            else ->{
+            else -> {
                 return false
             }
         }
-        return true
     }
-    private  fun goToNewGroup(){
-        val intent = Intent(this,NewGroupActivity::class.java)
-        startActivity(intent)
 
+    private fun goToNewGroupActivity(){
+        val i = Intent(this, NewGroupActivity::class.java)
+        startActivity(i)
+    }
+    private fun goToNewGroupBroadcast(){
+        val i = Intent(this, NewBroadcastActivity::class.java)
+        startActivity(i)
     }
 }

@@ -14,18 +14,23 @@
         android:theme="@style/Theme.Wtmchat"
         tools:targetApi="31">
         <activity
-            android:name=".NewGroupActivity"
+            android:name=".MainActivity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewBroadcastActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".NewGroupActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
