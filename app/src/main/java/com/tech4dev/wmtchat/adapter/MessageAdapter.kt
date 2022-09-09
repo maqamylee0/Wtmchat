@@ -1,16 +1,18 @@
 package com.tech4dev.wmtchat.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.tech4dev.wtmchat.ChatActivity
 import com.tech4dev.model.Message
 import com.tech4dev.wmtchat.SampleMessages
 import com.tech4dev.wtmchat.R
 
-class ListOfMessagesAdapter(val context: Context): RecyclerView.Adapter<ListOfMessagesAdapter.MsgViewHolder>() {
+class MessagesAdapter(val context: Context): RecyclerView.Adapter<MessagesAdapter.MsgViewHolder>() {
     private val sampleMessages = SampleMessages()
     private val listOfMessages: List<Message> = sampleMessages.LIST_OF_MESSAGES
 
@@ -23,6 +25,11 @@ class ListOfMessagesAdapter(val context: Context): RecyclerView.Adapter<ListOfMe
     override fun onBindViewHolder(holder: MsgViewHolder, position: Int) {
         holder.username.text = listOfMessages[position].username
         holder.message.text = listOfMessages[position].message
+
+        holder.itemView.setOnClickListener{
+        val intent = Intent(context, ChatActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listOfMessages.size

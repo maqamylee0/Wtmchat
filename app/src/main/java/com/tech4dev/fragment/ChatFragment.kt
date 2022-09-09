@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.tech4dev.wmtchat.adapter.ListOfMessagesAdapter
+import com.tech4dev.wmtchat.adapter.MessagesAdapter
 import com.tech4dev.wtmchat.R
 
 
@@ -24,7 +24,7 @@ class ChatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         chatRecycler = view.findViewById(R.id.chatRecycler)
 
-        chatRecycler.adapter = ListOfMessagesAdapter(requireContext())
+        chatRecycler.adapter = MessagesAdapter(requireContext())
         chatRecycler.layoutManager = LinearLayoutManager(requireContext())
     }
 }
