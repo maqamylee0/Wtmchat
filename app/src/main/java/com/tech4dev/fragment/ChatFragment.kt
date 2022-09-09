@@ -23,7 +23,6 @@ class ChatFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         chatRecycler = view.findViewById(R.id.chatRecycler)
-
         chatRecycler.adapter = MessagesAdapter(requireContext())
         chatRecycler.layoutManager = LinearLayoutManager(requireContext())
     }
